@@ -1,0 +1,17 @@
+建立git远程库：
+1
+	在git上建立一个账号，然后建立一个库。 
+2
+	在本地用ssh生成私钥和公钥	用 ssh-keygen 指令, 在 ~/.ssh
+	文件夹子里面，id_rsa.pub 是公钥。
+3
+	在git设置里面找到ssh and gpg key , 往ssh key 里面加入公钥
+4
+	在git项目里找到git ssh 地址, 在project里的code里面
+	本地使用git clone name git-ssh-url 添加
+	本地使用git remote add name git-ssh-url 添加远程库
+	本地编辑文件
+	本地提交
+	本地 git push -u -f name branch-name(第一次要用-u -f 以后可以用 git push name
+	branch-name)
+
